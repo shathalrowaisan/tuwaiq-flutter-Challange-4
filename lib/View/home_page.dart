@@ -16,6 +16,8 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            
+            // quotes from API
             Center(
               child: GetBuilder<MyPageController>(
                 builder: (_){
@@ -26,6 +28,8 @@ class HomePage extends StatelessWidget {
                 }
               ),
             ),
+
+            // next button
             Center(child: ElevatedButton(onPressed: (){pageControll.nextQuote();}, child: const Text('Next'))),
           ],
         ),
