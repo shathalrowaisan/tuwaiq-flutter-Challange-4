@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                 }
               ),
             ),
-            Center(child: ElevatedButton(onPressed: (){pageControll.NextQuote();}, child: const Text('Next'))),
+            Center(child: ElevatedButton(onPressed: (){pageControll.nextQuote();}, child: const Text('Next'))),
           ],
         ),
       ),

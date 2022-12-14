@@ -10,8 +10,8 @@ class MyPageController extends GetxController {
   
   List quotesData =  ['press next to start'] ;
 
-  NextQuote() async {
-    var result = await ClassApi.GetData();
+  nextQuote() async {
+    var result = await ClassApi.getData();
 
     if (result != []) {
       quotesData = [QuotesData.fromJson(json: result)];

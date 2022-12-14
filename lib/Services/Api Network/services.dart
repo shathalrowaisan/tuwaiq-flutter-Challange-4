@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http ;
 
 abstract class ClassApi {
 
-  static GetData() async {
+  static getData() async {
     
     try {
 
