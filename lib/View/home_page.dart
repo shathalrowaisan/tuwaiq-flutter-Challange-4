@@ -19,14 +19,14 @@ class HomePage extends StatelessWidget {
             
             // quotes from API
             Center(
-              child: GetBuilder<MyPageController>(
-                builder: (_){
-                  return Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Text(pageControll.quotesData[0].toString()),
-                  ) ;
-                }
-              ),
+              child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: GetBuilder<MyPageController>(
+                  builder: (_){
+                    return Text( pageControll.quotesData[0].toString() );
+                  }
+                ),
+              ) ,
             ),
 
             // next button
